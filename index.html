@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CashDaddy Aviator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+text-align:center;
+}
+
+/* HEADER */
+.header{
+padding:30px 20px;
+}
+
+.logo{
+width:130px;
+height:130px;
+object-fit:cover;
+border-radius:50%;
+border:4px solid red;
+box-shadow:0 0 25px red;
+margin-bottom:15px;
+}
+
+/* HERO */
+.hero{
+padding:40px 20px;
+}
+
+.hero h1{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+color:#ccc;
+margin-bottom:25px;
+}
+
+/* TIMER */
+.timer{
+font-size:28px;
+color:red;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+/* POP BUTTON */
+@keyframes pop{
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
+}
+
+.btn{
+background:red;
+color:white;
+padding:15px 35px;
+text-decoration:none;
+border-radius:8px;
+font-size:18px;
+display:inline-block;
+animation:pop 1.5s infinite;
+box-shadow:0 0 20px red;
+}
+
+/* INFO */
+.info{
+padding:50px 20px;
+background:#1a1a1a;
+line-height:1.8;
+font-size:18px;
+}
+
+.info span{
+display:block;
+margin:8px 0;
+}
+
+.highlight{
+color:red;
+font-weight:bold;
+}
+
+/* FEATURES */
+.features{
+padding:60px 20px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.box{
+background:#1c1c1c;
+padding:25px;
+width:260px;
+border-radius:12px;
+box-shadow:0 0 15px rgba(255,0,0,0.2);
+}
+
+.box h3{
+margin-bottom:10px;
+color:red;
+}
+
+/* FOOTER */
+footer{
+padding:20px;
+background:#111;
+font-size:14px;
+margin-top:40px;
+color:#aaa;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero h1{
+font-size:26px;
+}
+.timer{
+font-size:22px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<img src="logo.png" class="logo">
+<h2>CashDaddy Aviator</h2>
+</div>
+
+<div class="hero">
+<h1>Join & Start Winning</h1>
+<p>Daily Signals • High Multiplier • Fast Withdraw</p>
+
+<div class="timer" id="countdown"></div>
+
+<a href="https://t.me/+wQvta2Iq_4Q3MzA1" class="btn">Join Telegram Now</a>
+</div>
+
+<div class="info">
+<span>🇮🇳 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐂𝐀𝐒𝐇𝐃𝐀𝐃𝐃𝐘 𝐀𝐕𝐈𝐀𝐓𝐎𝐑 🚀</span>
+<span>💰 𝐔𝐥𝐭𝐫𝐚 𝐕𝐈𝐏 • 𝐇𝐢𝐠𝐡 𝐀𝐜𝐜𝐮𝐫𝐚𝐜𝐲</span>
+<span>🚀 𝐒𝐦𝐚𝐫𝐭 𝐏𝐥𝐚𝐲 • 𝐏𝐫𝐨 𝐒𝐭𝐫𝐚𝐭𝐞𝐠𝐲</span>
+<span>🔒 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 • 𝐋𝐢𝐦𝐢𝐭𝐞𝐝 𝐌𝐞𝐦𝐛𝐞𝐫𝐬</span>
+<br><br>
+<span class="highlight">DAILY SIGNAL 🚨</span>
+<span class="highlight">FREE SIGNAL</span>
+</div>
+
+<div class="hero">
+
+<div class="timer" id="countdown2"></div>
+
+<a href="https://t.me/+wQvta2Iq_4Q3MzA1" class="btn">Join Now</a>
+</div>
+
+<footer>
+© 2026 CashDaddy Aviator | All Rights Reserved
+</footer>
+
+<script>
+function startTimer(id){
+var time = 30;
+
+var countdown = setInterval(function(){
+var minutes = Math.floor(time / 60);
+var seconds = time % 60;
+seconds = seconds < 10 ? "0" + seconds : seconds;
+
+document.getElementById(id).innerHTML = "⏳ Offer Ends In: " + minutes + ":" + seconds;
+
+time--;
+
+if(time < 0){
+clearInterval(countdown);
+document.getElementById(id).innerHTML = "Offer Closed!";
+}
+},1000);
+}
+
+startTimer("countdown");
+startTimer("countdown2");
+</script>
+
+</body>
+</html>
